@@ -9,3 +9,9 @@ matrix:
     - go: 1.5
     - go: 1.6
     - go: tip
+
+install:
+  - go get -t -v ./...
+  
+script:
+ - go test -v ./...
